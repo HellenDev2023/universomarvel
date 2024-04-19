@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galería de Marvel</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+     integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" 
+     crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Enlaces a Bootstrap y archivos CSS personalizados -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css"> <!-- Archivo CSS personalizado -->
+
+    <style>
+        /* Estilo para ocultar las secciones */
+        .hidden {
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Barra de navegación -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">Galería de Marvel</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" onclick="showSection('inicio')">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" onclick="showSection('galeria')">Galería</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" onclick="showSection('noticias')">Películas</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" onclick="showSection('contacto')">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Banner con imagen de superhéroes de Marvel -->
+    <div class="jumbotron text-center mt-5">
+        <img src="bannermarvel.jpeg" alt="Superhéroes de Marvel">
+    </div>
+
+    <!-- Sección de Inicio -->
+    <section id="inicio" class="container">
+        <h2>Bienvenido a la Galería de Marvel</h2>
+        <p>Contenido de la página de inicio.</p>
+    </section>
+
+    <!-- Sección de Galería -->
+    <section id="galeria" class="container hidden">
+        <h2>Galería de Marvel</h2>
+
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+
+                <div class="swiper-slide">
+                    <img src="imgmarvel1.jpeg" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img src="imgmarvel2.jpeg" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img src="imgmarvel3.jpeg" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img src="imgmarvel4.jpeg" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img src="imgmarvel5.jpeg" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img src="imgmarvel6.jpeg" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img src="imgmarvel7.jpeg" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img src="imgmarvel8.jpeg" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img src="imgmarvel9.jpeg" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img src="imgmarvel10.jpeg" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img src="imgmarvel11.jpeg" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img src="imgmarvel12.jpeg" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img src="imgmarvel13.jpeg" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img src="imgmarvel14.jpeg" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img src="imgmarvel15.jpeg" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img src="imgmarvel16.jpeg" alt="">
+                </div>
+                
+
+            </div>
+        </div>
+
+
+    </section>
+
+    <!-- Sección de Noticias -->
+    <section id="noticias" class="container hidden">
+        <h2>Películas de Marvel</h2>
+        <p></p>
+    </section>
+
+    <!-- Sección de Contacto -->
+    <section id="contacto" class="container hidden">
+        <h2>Contacto</h2>
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+                <form action="#" method="POST">
+                    <div class="form-group">
+                        <label for="nombre">Nombre</label>
+                        <input type="text" class="form-control" id="nombre" name="nombre" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Correo electrónico</label>
+                        <input type="email" class="form-control" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="mensaje">Mensaje</label>
+                        <textarea class="form-control" id="mensaje" name="mensaje" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Enviar</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Scripts de Bootstrap y JavaScript -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="script.js" ></script>
+
+    <script>
+        function showSection(sectionId) {
+            // Oculta todas las secciones
+            var sections = document.querySelectorAll('section');
+            sections.forEach(function(section) {
+                section.classList.add('hidden');
+            });
+
+            // Muestra la sección seleccionada
+            var selectedSection = document.getElementById(sectionId);
+            selectedSection.classList.remove('hidden');
+        }
+    </script>
+</body>
+
+</html>
